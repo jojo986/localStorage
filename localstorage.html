@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>LocalStorage</title>
+    <link rel="stylesheet" src="" />
+    <style>
+        .container {max-width: 1120px;margin: 0 auto;}
+        .box {width: 40px;padding: 40px;border: 1px solid #ccc;text-align: center;float: left;margin: 0 15px;cursor: pointer;}
+        .counter {margin: 20px auto;}
+    </style>
+  </head>
+  <body onload="getval();">
+    <section class="container">
+        <div class="total">
+            <div>Total: <span class="tamt"></span></div>
+            <div>Tkt no.: <span class="tktno"></span></div>
+        </div>
+        <div class="counter">
+            <div class="box" for="1" onclick="book(1,100,this);">1</div>
+            <div class="box" for="2" onclick="book(2,200,this);">2</div>
+            <div class="box" for="3" onclick="book(3,300,this);">3</div>
+            <div class="box" for="4" onclick="book(4,400,this);">4</div>
+            <div class="box" for="5" onclick="book(5,500,this);">5</div>
+            <div class="box" for="6" onclick="book(6,600,this);">6</div>
+            <div class="box" for="7" onclick="book(7,700,this);">7</div>
+        </div>
+        <button onclick="remove();">Remove</button>
+    </section>
+    <script src="book.js"></script>
+  </body>
+</html>
